@@ -18,3 +18,21 @@ header
     padding: 10px;
     text-align: center;
 }
+
+main
+{
+    text-align: center;
+    width: 100%;
+    
+}
+
+footer
+{
+    background-color: #afa6a6;
+    color: #ff0000;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
