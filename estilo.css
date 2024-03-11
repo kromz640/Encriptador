@@ -11,28 +11,80 @@ body
     display: flex;
 }
 
-header
-{
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-}
-
-main
+header,main,footer
 {
     text-align: center;
     width: 100%;
+    max-width: 1200px;
+}
+
+
+
+textarea,button, .mensaje-texto, .tarjeta-contenedor
+
+{
+    background-color: #f0e398;
+    border: 1px solid #0044ff;
+    padding: 10px;
+    margin:10px 0;
+    border-radius: 5px;
+}
+
+
+
+
+button:hover
+{
+    background-color: #005BBB;
     
+    transition: background-color 1.5s;
+    
+}
+
+button
+{
+    cursor:pointer;
+    transition: background-color 1.5s;
+}
+
+
+main
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap:20px;
+    width:100%;
+}
+
+
+.encriptar, .tarjeta-salida
+{
+    flex-basis: 45%;
+    max-width: 45%;
+}
+
+@media (max-width: 768px)
+{
+    main
+    {
+        flex-direction: column;
+    }
+    .encriptar, .tarjeta-salida
+    {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
 }
 
 footer
 {
-    background-color: #afa6a6;
-    color: #ff0000;
-    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    width:100%;
     text-align: center;
+    padding:20px 0;
+    color: #ffffff;
 }
-
-
-
