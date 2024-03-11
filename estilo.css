@@ -29,8 +29,8 @@ textarea, button, .mensaje-texto, .tarjeta-contenedor
 
 button:hover 
 {
-    background-color: #f3d735; 
-    color: #005BBB; 
+    background-color: #005BBB;
+    color: #ffffff; 
     transition: background-color 0.5s, color 0.5s;
 }
 
