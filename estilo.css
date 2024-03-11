@@ -1,79 +1,70 @@
-body
+body 
 {
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    flex-direction: column;
-    display: flex;
+    background-color: #ffffff; 
 }
 
-header,main,footer
-{
+header, main, footer
+ {
     text-align: center;
-    width: 100%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 800px; 
 }
 
-
-
-textarea,button, .mensaje-texto, .tarjeta-contenedor
-
-{
-    background-color: #f0e398;
-    border: 1px solid #0044ff;
+textarea, button, .mensaje-texto, .tarjeta-contenedor
+ {
+    background-color: #f0e398; 
+    border: 1px solid #0044ff; 
     padding: 10px;
-    margin:10px 0;
+    margin: 10px 0;
     border-radius: 5px;
 }
 
-
-
-
-button:hover
+button:hover 
 {
-    background-color: #005BBB;
-    
-    transition: background-color 1.5s;
-    
+    background-color: #f3d735; 
+    color: #005BBB; 
+    transition: background-color 0.5s, color 0.5s;
 }
 
 button
-{
-    cursor:pointer;
-    transition: background-color 1.5s;
+ {
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-
-main
+main 
 {
-    display:flex;
-    flex-direction: row;
+    display: flex;
+    flex-direction: row; 
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap:20px;
-    width:100%;
+    gap: 20px;
+    width: 100%; 
 }
-
 
 .encriptar, .tarjeta-salida
 {
-    flex-basis: 45%;
+    flex-basis: 45%; 
     max-width: 45%;
 }
 
 @media (max-width: 768px)
 {
-    main
-    {
+    main 
+	{
         flex-direction: column;
     }
     .encriptar, .tarjeta-salida
-    {
+	{
         flex-basis: 100%;
         max-width: 100%;
     }
@@ -83,8 +74,9 @@ footer
 {
     position: absolute;
     bottom: 0;
-    width:100%;
+    width: 100%;
     text-align: center;
-    padding:20px 0;
+    padding: 20px 0;
     color: #ffffff;
 }
+
